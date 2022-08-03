@@ -1,0 +1,88 @@
+// Заголовки, общие БЄМ блоки и проче...
+.page {
+    margin-top: rem(118);
+    // .page__hero
+
+    &__hero {
+        position: relative;
+        padding-top: rem(121);
+        padding-bottom: rem(131);
+        background-image: linear-gradient(180deg, #dedde2 0%, #e3e6ed 44.29%, #dde6ef 100%);
+        @media (max-width: $tablet) {
+            padding-top: 0;
+            padding-bottom: 0;
+            background-image: linear-gradient(270deg, #cfcdce 0%, #dadadc 44.29%, #dedde2 100%);
+        }
+    }
+
+    &__companies {
+    }
+
+    &__mission {
+        padding-top: rem(64);
+        background-color: $mainColor;
+    }
+
+    &__slider {
+    }
+
+    &__boxes {
+        position: relative;
+        border-top: 1px solid #2d2a26;
+        border-bottom: 1px solid #2d2a26;
+    }
+
+    &__waitlist {
+        padding-top: rem(96);
+        padding-bottom: rem(119);
+        background-image: linear-gradient(98deg, #d9cfff, #ebf1ff 44%, #dde6ef);
+        outline-offset: 0px;
+        outline: $mainColor solid 1px;
+        @media (max-width: $tablet) {
+            padding: rem(65) 0;
+        }
+    }
+
+    &__social {
+    }
+}
+
+.title {
+    font-family: "AvenirNext-Bold";
+    letter-spacing: -3px;
+    font-size: rem(48);
+    @media (max-width: $tablet) {
+        font-size: rem(36);
+    }
+    span {
+        font-family: "PlayfairDisplay";
+    }
+    &__blue {
+        color: #8abadd;
+    }
+    &__orange {
+        color: #f87c56;
+    }
+    &__salmon {
+        color: #f5cabf;
+    }
+}
+
+.text {
+    color: $white;
+    font-family: "AvenirNext-Medium";
+    font-size: rem(18);
+    line-height: math.div(27, 18);
+    letter-spacing: -0.01em;
+}
+
+.preloader {
+    align-items: center;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}

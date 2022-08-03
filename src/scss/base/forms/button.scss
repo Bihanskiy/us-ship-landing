@@ -1,0 +1,62 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: rem(15) rem(26);
+	font-family: "AvenirNext-DemiBold";
+	font-weight: 600;
+	font-size: rem(14);
+	line-height: math.div(19, 14);
+	position: relative;
+	z-index: 1;
+	border: 1px solid #000;
+	border-radius: 10px;
+	transform: translate(-4px, -4.5px);
+	transition: 0.2s;
+	white-space: nowrap;
+	cursor: pointer;
+
+	&-wrapper {
+		position: relative;
+		border-radius: 10px;
+		background-color: #2d2a26;
+
+		&.wrapper-white {
+			background-color: $whiteBackgroundColor;
+		}
+	}
+
+	&.small {
+		padding: rem(15.5);
+		@media (max-width: $mobile) {
+			align-items: flex-start;
+		}
+	}
+
+	&.in-nav {
+		background-color: $whiteBackgroundColor;
+	}
+	&.in-hero,
+	&.in-footer,
+	&.in-slide-03 {
+		background-color: #8abadd;
+	}
+	&.in-company,
+	&.in-slide-02 {
+		background-color: #f5cabf;
+	}
+	&.in-mission {
+		background-color: #ecb3cb;
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			transform: translate(-2px, -2.5px);
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}
